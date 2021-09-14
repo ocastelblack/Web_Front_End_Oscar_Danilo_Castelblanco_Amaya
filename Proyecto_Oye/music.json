@@ -1,0 +1,72 @@
+[
+        {
+            "artista" : "Avicii",
+            "cancion" : "Levels",
+            "ruta" : "./music/Avicii - Levels.mp3",
+            "icono" : "./img/icon_1.svg",
+            "escuchadas" : 50
+        },
+        {
+            "artista" : "Avicii",
+            "cancion" : "Wake Me Up",
+            "ruta" : "./music/Avicii - Wake Me Up.mp3",
+            "icono" : "./img/icon_2.svg",
+            "escuchadas" : 25
+        },
+        {
+            "artista" : "Ed Sheeran",
+            "cancion" : "Shape of You",
+            "ruta" : "./music/Ed Sheeran - Shape of You.mp3",
+            "icono" : "./img/icon_3.svg",
+            "escuchadas" : 41
+        },
+        {
+            "artista" : "Juanes",
+            "cancion" : "Es Por Ti",
+            "ruta" : "./music/Juanes - Es Por Tí.mp3",
+            "icono" : "./img/icon_4.svg",
+            "escuchadas" : 78
+        },
+        {
+            "artista" : "Juanes",
+            "cancion" : "Nada Valgo Sin Tu Amor",
+            "ruta" : "./music/Juanes - Nada Valgo Sin Tu Amor.mp3",
+            "icono" : "./img/icon_1.svg",
+            "escuchadas" : 12
+        },
+        {
+            "artista" : "Juanes",
+            "cancion" : "Para Tu Amor",
+            "ruta" : "./music/Juanes - Para Tu Amor.mp3",
+            "icono" : "./img/icon_2.svg",
+            "escuchadas" : 12
+        },
+        {
+            "artista" : "OneRepublic",
+            "cancion" : "Counting Stars",
+            "ruta" : "./music/OneRepublic - Counting Stars.mp3",
+            "icono" : "./img/icon_3.svg",
+            "escuchadas" : 12
+        },
+        {
+            "artista" : "OneRepublic",
+            "cancion" : "Secrets",
+            "ruta" : "./music/OneRepublic - Secrets.mp3",
+            "icono" : "./img/icon_4.svg",
+            "escuchadas" : 12
+        },
+        {
+            "artista" : "Shawn Mendes",
+            "cancion" : "There's Nothing Holdin' Me Back",
+            "ruta" : "./music/OneRepublic - Secrets.mp3",
+            "icono" : "./img/icon_1.svg",
+            "escuchadas" : 12
+        },
+        {
+            "artista" : "Shawn Mendes",
+            "cancion" : "Treat You Better",
+            "ruta" : "./music/Shawn Mendes - Treat You Better.mp3",
+            "icono" : "./img/icon_2.svg",
+            "escuchadas" : 12
+        }
+]

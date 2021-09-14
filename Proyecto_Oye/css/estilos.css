@@ -1,0 +1,71 @@
+h1{
+    color: #3336FF;
+}
+
+ @media (min-width: 768px) { 
+    .navbar-nav{
+        margin-left: 600px;
+    }
+ }
+
+nav{
+    border-bottom: 5px solid black;
+}
+
+.galeria{
+    margin-top: 60px;
+    background: #FFD133;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #474749;
+    border-top: 1px solid #474749;
+    border-right: 1px solid #474749;
+    border-left: 1px solid #474749;
+}
+
+.top{
+    margin-top: 80px;
+    margin-bottom: 100px;
+    background: #FFD133;
+    letter-spacing: 10px;
+    border-bottom: 1px solid #474749;
+    border-top: 1px solid #474749; 
+}
+
+.tituloFormulario{
+    margin-top: 80px;
+    border-bottom: 1px solid #474749;
+}
+
+.Aviso{
+    font-family: 'Courier New', Courier, monospace;
+    color: #3336FF;
+}
+
+.error{
+    color: #fc0606;
+}
+
+.card {
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+  
+  .card .view {
+    -webkit-border-top-left-radius: 10px;
+    border-top-left-radius: 10px;
+    -webkit-border-top-right-radius: 10px;
+    border-top-right-radius: 10px; }
+  
+  .card h5 a {
+    color: #0d47a1;
+  }
+  .card h5 a:hover {
+    color: #072f6b;
+  }
+  
+  .form-outline{
+      margin-bottom: 10px;
+  }
+
+    
+
+

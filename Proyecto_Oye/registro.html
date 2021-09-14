@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/estilos.css">
+    <script src="./js/icons.js"></script>
+    <title>Registro</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-warning">
+        <h1 class="titulo"><img src="./img/logo.png" alt="">OYE</h1>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#barra"
+          aria-controls="barra"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+        <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="barra">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link canciones" href="canciones.html">Canciones</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav">
+                    <li class="nav-link">
+                        <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#exampleModalCenter">
+                           Contacto
+                        </button>
+                    </li>
+                    <li class="nav-link">
+                        <a href="sesion.html" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Inicio de Sesion</a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="registro.html" class="btn btn-primary btn-sm" role="button" aria-pressed="true">Registro</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+
+    <main class="container registro text-center">
+        <h2 class="tituloFormulario">Registro</h2>
+        <div class="container">
+            <form action="" id="formulario" name="users">
+                <div class="form-group">
+                    <label>Correo Electrónico* </label><i class="far fa-envelope"></i>
+                    <input type="text" class="form-control" name="email" id="email" placeholder="Correo Electrónico">
+                    <span id="errorEmail" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label>Contraseña* </label><i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" name="contraseña" id="contraseña" placeholder="Contraseña">
+                    <span id="errorpassword" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label>Confirmar Contraseña* </label><i class="fas fa-lock"></i>
+                    <input type="password" class="form-control" name="confirmar" placeholder="Confirmar Contraseña">
+                    <span id="errorconfirmar" class="error"></span>
+                </div>
+                <div class="form-group">
+                    <label>Genero musical favorito*</label><i class="fas fa-music"></i>
+                    <select class="form-control" id="musica" name="musica">
+                        <option value="">Seleccione una opcion</option>
+                        <option value="1">Musica Clasica</option>
+                        <option value="2">Blues</option>
+                        <option value="3">Jazz</option>
+                        <option value="4">Rock</option>
+                        <option value="5">Country</option>
+                    </select>
+                    <span id="errorMusica" class="error"></span>
+                  </div>
+
+                  <h4>Edad*</h4>
+                  <div class="radio" name="edad" id="edad">
+                    <input type="radio" name="edad" id="menor20">
+                    <label for="menor20">Menor a 20</label>
+
+                    <input type="radio" name="edad" id="20a40">
+                    <label for="20a40">20 a 40</label>
+
+                    <input type="radio" name="edad" id="mayor50">
+                    <label for="mayor50">Mayor a 50</label>
+                    <span id="errorEdad" class="error"></span>
+                  </div>
+
+                  <p>
+                    <label for="terminos">
+                      <input type="checkbox" name="terminos" id="terminos" value="acepta"> Acepta términos y condiciones</label>
+                      <span id="errorTerminos" class="error"></span>
+                  </p>
+                  
+                  <h5 class="Aviso">* Campos Obligatorios</h5>
+
+                  <p>
+                    <input type="submit" value="Continuar" onclick="return validar(this.form)">
+                  </p>
+            </form>
+        </div>
+    </main>
+
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <h5>info@oye.com</h5><br/>
+              <h5>+1 123 123123123</h5>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="container-fluid py-1 bg-warning text-white">
+        <div class="row">
+          <div class="col text-center">
+            Derechos reservados
+          </div>
+        </div>
+    </footer>
+
+    <script src="./js/scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+</body>
+</html>
